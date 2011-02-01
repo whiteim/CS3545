@@ -17,7 +17,7 @@ typedef vec_t vec5_t[5];
 
 #define VectorAdd(v1, v2, out) {out[0]=v1[0]+v2[0];out[1]=v1[1]+v2[1];out[2]=v1[2]+v2[2];}
 #define VectorSubtract(v1, v2, out)  {out[0]=v1[0]-v2[0];out[1]=v1[1]-v2[1];out[2]=v1[2]-v2[2];}
-#define DotProduct(v1, v2, out) {out[0]+= v1[0]*v2[0];out[1]+= v1[1]*v2[1];out[2]+= v1[2]*v2[2];}
+#define DotProduct(v1, v2, dot) {dot= v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2];}
 #define Scaling(v1, sc) {v1[0] *= sc; v1[1] *= sc; v1[2] *= sc;}
 #define VCopy(v1, v2) {v2[0] = v1[0]; v2[1] = v1[1]; v2[2] = v1[2];}
 #define VClear(v1) {v1[0]=0;v1[1]=0;v1[2]=0;}
